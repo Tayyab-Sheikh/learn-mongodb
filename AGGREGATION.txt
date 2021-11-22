@@ -1,0 +1,24 @@
+AGGREGATION FRAMEWORK
+-->Stages and operators
+-->Output of last pipeline input of next
+-->Mongodb optimize data in good way
+
+
+Aggregation Pipeline : collection -> $match->$sort->$group->$project->OUTPUT
+
+
+aggregation docs
+ https://docs.mongodb.com/manual/core/aggregation-pipeline/
+
+project docs
+https://docs.mongodb.com/manual/reference/operator/aggregation/project/
+
+about moongodb optimization
+https://docs.mongodb.com/manual/core/aggregation-pipeline-optimization/
+
+
+
+
+
+
+
