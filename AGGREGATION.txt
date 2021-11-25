@@ -16,7 +16,15 @@ https://docs.mongodb.com/manual/reference/operator/aggregation/project/
 about moongodb optimization
 https://docs.mongodb.com/manual/core/aggregation-pipeline-optimization/
 
+Mongodb indexes
 
+indexes are used to run query more efficient and fast
+without index mongodb run query in COLSCAN order
+Single field
+Compound
+Multikey
+Text
+Hashed
 
 
 
