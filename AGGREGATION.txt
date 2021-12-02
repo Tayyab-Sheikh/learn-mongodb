@@ -20,11 +20,21 @@ Mongodb indexes
 
 indexes are used to run query more efficient and fast
 without index mongodb run query in COLSCAN order
-Single field
-Compound
-Multikey
-Text
-Hashed
+Single field : MongoDB supports the creation of user-defined ascending/descending indexes on a single field of a document.
+Compound : MongoDB also supports user-defined indexes on multiple fields, i.e. compound indexes.
+Multikey : MongoDB uses multikey indexes to index the content stored in arrays. If you index a field that holds an array value, MongoDB creates separate index entries for every element of the array.
+These multikey indexes allow queries to select documents that contain arrays by matching on element or elements of the arrays.
+Geospatial : efficient queries of geospatial coordinate data/In MongoDB, you can store geospatial data as GeoJSON objects or as legacy coordinate pairs.
+A 2dsphere index supports queries that calculate geometries on an earth-like sphere. 2dsphere index supports all MongoDB geospatial queries: 
+queries for inclusion, intersection and proximity./ The 2dsphere index supports data stored as GeoJSON objects and legacy coordinate pairs 
+Use a 2d index for data stored as points on a two-dimensional plane
+Text : MongoDB provides text indexes to support text search queries on string content. text indexes can include any field whose 
+value is a string or an array of string elements.
+Hashed : Hashed indexes support sharding using hashed shard keys. Hashed based sharding uses a hashed index of a 
+field as the shard key to partition data across your sharded cluster.
+TTL :  special indexes that MongoDB can use to automatically remove documents from a collection after a certain amount of time.
+This is ideal for certain types of information like machine generated event data, logs, and session information that only need to 
+persist in a database for a finite amount of time.
 
 
 
